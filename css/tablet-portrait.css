@@ -1,0 +1,19 @@
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	/*body:after {
+		z-index: 99999999;
+		content: "Tablet Portrait (min-width: 768px) and (max-width: 959px)";
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background: #333;
+		color: #fff;
+		padding: 10px;
+	}*/
+
+	.col{
+		width: 50%;
+	}
+
+	
+	
+}
