@@ -4,50 +4,14 @@
 	// Execute when DOM is ready
 	/////////////////////////////////////////////
 
-	$(document).ready(function() {
+	$(function() {
 
 		/////////////////////////////////////////////
 		// Initialize map
 		/////////////////////////////////////////////
 		initialize();
 
-		/////////////////////////////////////////////
-		// Pageslide
-		/////////////////////////////////////////////
-		TriggerClick = 0;
-		$("#click-me").click(function () {
-			if(TriggerClick==0){
-				TriggerClick=1;
-	        	$(".lines-button.x").toggleClass("open");
-	        	$(".lines-button.x").toggleClass("close");
-	        	$("nav").animate({right: "0px", opacity: "1"},1000, "easeOutExpo");
-	        }else{
-		        TriggerClick=0;
-		        $(".lines-button.x").toggleClass("open");
-	        	$(".lines-button.x").toggleClass("close");
-		        $("nav").animate({right: "-100%", opacity: "0"},1000, "easeOutExpo");
-		    };
-	    });
-
-		/////////////////////////////////////////////
-		// Waypoints sticky header
-		/////////////////////////////////////////////
-		// $('#nav-bar').waypoint('sticky');
-
-
-		// $('#nav-bar').waypoint(function() {
-		// 	$('#nav-bar').addClass('stuck');
-		// 	}, {
-		// 	offset: '-100%'
-		// });
-
-		// $('#nav-bar').waypoint(function() {
-		// 	$('#nav-bar').removeClass('stuck');
-		// 	}, {
-		// 	offset: '-500'
-		// });
-
-	    /////////////////////////////////////////////
+	  /////////////////////////////////////////////
 		// Find any element starting with a # in the URL
 		//  And listen to any click events it fires
 		/////////////////////////////////////////////
@@ -61,36 +25,6 @@
 
 			//  Don't let them visit the url, we'll scroll you there
 			return false;
-		});
-
-		$('#nav a.slide-me').click(function(){
-			TriggerClick=0;
-	        $(".lines-button.x").toggleClass("open");
-        	$(".lines-button.x").toggleClass("close");
-	        $("nav").animate({right: "-350px", opacity: "0"},1000, "easeOutExpo");
-		});
-
-		/////////////////////////////////////////////
-		// Add .active class to nav items
-		/////////////////////////////////////////////
-		var header_height = $('#nav').outerHeight();
-		var sections = [];
-		$('#nav a.slide-me').each(function(){
-		    var section = $(this.hash).offset()
-		    sections.push({
-		        'link':$(this).parent(),
-		        'top' : $(this.hash).offset().top-header_height,
-		        'bottom' : $(this.hash).offset().top + $(this.hash).outerHeight() -header_height
-		    });
-		});
-
-		$(window).scroll(function(){
-		    for(var i = 0; i < sections.length; i++)
-		        if($(window).scrollTop() >= sections[i].top &&
-		           $(window).scrollTop() <= sections[i].bottom){
-		            sections[i].link.addClass('active')
-		                .siblings().removeClass('active');
-		        }
 		});
 
 		//////////////////////////////////////
@@ -113,15 +47,8 @@
 		  });
 		};
 
-		/*
-		* Call the leavePage function upon link clicks with the "transition" class
-		*/
+		// Call the leavePage function upon link clicks with the "transition" class
 		$('.transition').leavePage();
-
-		// var loadPage = function(){
-		//   $(".subpage").fadeIn(2000);
-		// }
-
 		$(".subpage").fadeIn(2000);
 
 
