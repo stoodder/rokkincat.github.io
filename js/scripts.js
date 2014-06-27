@@ -29,24 +29,6 @@
 		    };
 	    });
 
-		/////////////////////////////////////////////
-		// Waypoints sticky header
-		/////////////////////////////////////////////
-		// $('#nav-bar').waypoint('sticky');
-
-
-		// $('#nav-bar').waypoint(function() {
-		// 	$('#nav-bar').addClass('stuck');
-		// 	}, {
-		// 	offset: '-100%'
-		// });
-
-		// $('#nav-bar').waypoint(function() {
-		// 	$('#nav-bar').removeClass('stuck');
-		// 	}, {
-		// 	offset: '-500'
-		// });
-
 	    /////////////////////////////////////////////
 		// Find any element starting with a # in the URL
 		//  And listen to any click events it fires
