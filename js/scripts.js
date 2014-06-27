@@ -7,10 +7,10 @@
 	$(document).ready(function() {
 
 		/////////////////////////////////////////////
-		// initialize map
+		// Initialize map
 		/////////////////////////////////////////////
 		initialize();
-		
+
 		/////////////////////////////////////////////
 		// Pageslide
 		/////////////////////////////////////////////
@@ -58,7 +58,7 @@
 			var target = $($(this).attr('href'));
 
 			$('html,body').animate({scrollTop: $(target).offset().top},'slow');
-			
+
 			//  Don't let them visit the url, we'll scroll you there
 			return false;
 		});
@@ -67,7 +67,7 @@
 			TriggerClick=0;
 	        $(".lines-button.x").toggleClass("open");
         	$(".lines-button.x").toggleClass("close");
-	        $("nav").animate({right: "-350px", opacity: "0"},1000, "easeOutExpo"); 
+	        $("nav").animate({right: "-350px", opacity: "0"},1000, "easeOutExpo");
 		});
 
 		/////////////////////////////////////////////
@@ -75,7 +75,7 @@
 		/////////////////////////////////////////////
 		var header_height = $('#nav').outerHeight();
 		var sections = [];
-		$('#nav a.slide-me').each(function(){  
+		$('#nav a.slide-me').each(function(){
 		    var section = $(this.hash).offset()
 		    sections.push({
 		        'link':$(this).parent(),
@@ -84,7 +84,7 @@
 		    });
 		});
 
-		$(window).scroll(function(){   
+		$(window).scroll(function(){
 		    for(var i = 0; i < sections.length; i++)
 		        if($(window).scrollTop() >= sections[i].top &&
 		           $(window).scrollTop() <= sections[i].bottom){
@@ -97,23 +97,23 @@
 		// Function to animate leaving a page
 		//////////////////////////////////////
 
-		$.fn.leavePage = function() {   
-		    
+		$.fn.leavePage = function() {
+
 		  this.click(function(event){
 		    // Don't go to the next page yet.
 		    event.preventDefault();
 		    linkLocation = this.href;
-		    
+
 		    // Fade out this page first.
 		    $('body').fadeOut(1000, function(){
-		      
+
 		      // Then go to the next page.
 		      window.location = linkLocation;
-		    });      
-		  }); 
+		    });
+		  });
 		};
 
-		/* 
+		/*
 		* Call the leavePage function upon link clicks with the "transition" class
 		*/
 		$('.transition').leavePage();
@@ -136,35 +136,5 @@
 		});
 
 	});
-
-	/////////////////////////////////////////////
-	// Execute when page is fully loaded
-	/////////////////////////////////////////////
-	$(window).load(function() {
-		
-		$(function(){ 
-
-			// adjust header height
-			$('#home') .css({'height': (($(window).height()) - 0)+'px'});
-
-			$(window).resize(function(){
-			  $('#home') .css({'height': (($(window).height()) - 0)+'px'});
-			});
-
-			$('#contact-us') .css({'height': (($(window).height()) - 0)+'px'});
-
-			$(window).resize(function(){
-			  $('#contact-us') .css({'height': (($(window).height()) - 0)+'px'});
-			});
-
-		});
-
-	});
-
-	// (function(){
-	// 	if(Modernizr.touch) {
-	// 	    // alert("i'm a touch device!!!!");
-	// 	}
-	// })();
 
 }(jQuery));

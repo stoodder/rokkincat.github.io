@@ -48,7 +48,7 @@ section .header p{
 		-ms-transition: all 0.5s ease-in-out;
 		-o-transition: all 0.5s ease-in-out;
 		transition: all 0.5s ease-in-out;
-		
+
 	}
 	#nav-bar.stuck, .subpage #nav-bar {
 		display: block;
@@ -177,37 +177,37 @@ section .header p{
 		color: #fff;
 	}
 	nav .socialIcons ul.icons li a.facebook-icon:hover {
-		background-color: #395aa2; 
+		background-color: #395aa2;
 	}
-	
+
 	nav .socialIcons ul.icons li a.twitter-icon:hover {
 		background-color: #38a6de;
 	}
 
 	nav .socialIcons ul.icons li a.linkedIn-icon:hover {
-		background-color: #069; 
+		background-color: #069;
 	}
-	
+
 	nav .socialIcons ul.icons li a.pinterest-icon:hover {
 		background-color: #c42126;
 	}
-	
+
 	nav .socialIcons ul.icons li a.instagram-icon:hover {
 		background-color: #603813;
 	}
-	
+
 	nav .socialIcons ul.icons li a.youtube-icon:hover {
 		background-color: #c42126;
 	}
-	
+
 	nav .socialIcons ul.icons li a.google-icon:hover {
 		background-color: #333;
 	}
-	
+
 	nav .socialIcons ul.icons li a.icon-rss-alt:hover {
 		background-color: #f1620c;
 	}
-	
+
 	nav .socialIcons ul.icons li a.yelp-icon:hover {
 		background-color: #b90c02;
 	}
@@ -364,6 +364,10 @@ section .header p{
 		padding: 60px 0 30px;
 	}
 
+	#home, #contact-us {
+		height: 100vh;
+	}
+
 		/* #home
 		------------------------------------------------------*/
 
@@ -392,7 +396,7 @@ section .header p{
 			margin: 0 0 0 -9px;
 			width: 18px;
 		}
-		
+
 
 		/* #about
 		==================================================================== */
@@ -417,7 +421,7 @@ section .header p{
 			color: #606161;
 		}
 
-		
+
 
 
 		/* #work
@@ -520,9 +524,9 @@ section .header p{
 		/* #subpage
 		===================================================================== */
 
-		
 
-		
+
+
 
 		/* #contact
 		==================================================================== */
@@ -605,37 +609,37 @@ section .header p{
 			color: #fff;
 		}
 		#contact-us .socialIcons ul.icons li a.facebook-icon:hover {
-			background-color: #395aa2; 
+			background-color: #395aa2;
 		}
-		
+
 		#contact-us .socialIcons ul.icons li a.twitter-icon:hover {
 			background-color: #38a6de;
 		}
 
 		#contact-us .socialIcons ul.icons li a.linkedIn-icon:hover {
-			background-color: #069; 
+			background-color: #069;
 		}
-		
+
 		#contact-us .socialIcons ul.icons li a.pinterest-icon:hover {
 			background-color: #c42126;
 		}
-		
+
 		#contact-us .socialIcons ul.icons li a.instagram-icon:hover {
 			background-color: #603813;
 		}
-		
+
 		#contact-us .socialIcons ul.icons li a.youtube-icon:hover {
 			background-color: #c42126;
 		}
-		
+
 		#contact-us .socialIcons ul.icons li a.google-icon:hover {
 			background-color: #333;
 		}
-		
+
 		#contact-us .socialIcons ul.icons li a.icon-rss-alt:hover {
 			background-color: #f1620c;
 		}
-		
+
 		#contact-us .socialIcons ul.icons li a.yelp-icon:hover {
 			background-color: #b90c02;
 		}
@@ -644,12 +648,12 @@ section .header p{
 			background-color: #f2a019;
 		}
 
-		
+
 
 	/* #Footer
 	================================================== */
 
-	
+
 
 /* #Icons
 ================================================== */
