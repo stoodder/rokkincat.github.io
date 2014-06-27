@@ -180,6 +180,10 @@ section .header p{
 		background-color: #395aa2;
 	}
 
+	.socialIcons ul.icons li a.github-icon:hover {
+		background-color: #6CC644;
+	}
+
 	nav .socialIcons ul.icons li a.twitter-icon:hover {
 		background-color: #38a6de;
 	}
@@ -584,7 +588,7 @@ section .header p{
 			top: 0;
 			left: 50%;
 			float: left;
-			margin: 0 0 30px -55px;
+			margin: 0 0 30px -72px;
 			width: 298px;
 			list-style: none;
 		}
@@ -706,6 +710,9 @@ section .header p{
 .twitter-icon:before {
 	content: "\e601";
 }
+.github-icon:before {
+	content: "\e602";
+}
 .pinterest-icon:before {
 	content: "\e602";
 }
@@ -719,7 +726,7 @@ section .header p{
 	content: "\e605";
 }
 .linkedIn-icon:before {
-	content: "\e606";
+	content: "\e603";
 }
 .yelp-icon:before {
 	content: "\e607";
