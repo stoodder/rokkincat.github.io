@@ -57,8 +57,8 @@ function initialize() {
 
 	      map.mapTypes.set('milwaukee', greyMapType);
 	      map.setMapTypeId('milwaukee');
-	
-    		var companyImage = new google.maps.MarkerImage('images/pointer.png',
+
+    		var companyImage = new google.maps.MarkerImage('images/pointer-red-less.png',
     			new google.maps.Size(60,60),
     			new google.maps.Point(0,0),
     			new google.maps.Point(20,30)
@@ -77,5 +77,5 @@ function initialize() {
     			icon: companyImage,
     			title:"Current Location",
     			zIndex: 3});
-	
+
 }
