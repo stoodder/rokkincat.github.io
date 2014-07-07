@@ -152,9 +152,7 @@
 	a:visited{color: inherit;}
 	a:hover, a:focus {
 		text-decoration: none;
-		-ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=80)";
-		filter: alpha(opacity=80);
-		opacity: .8;
+		color: #eb5043;
 	}
 	p{
 		font-size: 13px;
@@ -230,9 +228,6 @@
 	.button.red:hover{
 		color: #fff !important;
 		background: #eb5043;
-		-moz-box-shadow: 0px 0px 10px 0px #eb5043;
-		-webkit-box-shadow:  0px 0px 10px 0px #eb5043;
-		box-shadow:  0px 0px 10px 0px #eb5043;
 	}
 
 	.button:hover,
@@ -240,9 +235,7 @@
 	input[type="submit"]:hover,
 	input[type="reset"]:hover,
 	input[type="button"]:hover {
-		-moz-box-shadow: 0px 0px 10px 0px #97c5ac;
-		-webkit-box-shadow:  0px 0px 10px 0px #97c5ac;
-		box-shadow:  0px 0px 10px 0px #97c5ac; }
+}
 
 	.button:active,
 	button:active,
