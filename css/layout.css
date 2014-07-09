@@ -369,7 +369,7 @@ section .header p{
 	}
 
 	#home, #contact-us {
-		height: 100vh;
+		height: 100%;
 	}
 
 		/* #home
