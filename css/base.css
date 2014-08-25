@@ -352,3 +352,27 @@
 		display: block;
 		margin: 0 auto;
 	}
+
+	/* Contact form
+	============================================== */
+	.override .mailto.ninja footer nav.toolbar {
+		background-color: #222;
+		top: inherit;
+		width: 100%;
+	}
+
+	.override .mailto.ninja footer nav li {
+		width: auto;
+	}
+
+	.override .mailto.ninja footer .logo {
+		display: none;
+	}
+
+	.override .mailto.ninja input, .override .mailto.ninja textarea {
+		background-color: white!important;
+	}
+
+	.override .mailto.ninja #send {
+		background: #eb5043 !important
+	}
