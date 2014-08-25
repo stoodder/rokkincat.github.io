@@ -376,3 +376,27 @@
 	.override .mailto.ninja #send {
 		background: #eb5043 !important
 	}
+
+	.btn-connect {
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		margin: 0 0 0 -175px;
+		color: #eb5043 !important;
+		padding: 10px 75px;
+		font-size: 16px;
+		border: 3px solid #eb5043;
+		width: 350px;
+		text-align: center;
+		font-family: 'Gotham-Medium', Arial, Helvetica, sans-serif;
+	}
+	.btn-connect:hover {
+		background: #eb5043;
+		color: #ffffff !important;
+		padding: 10px 75px;
+		font-size: 16px;
+		border: 3px solid #eb5043;
+		width: 350px;
+		text-align: center;
+		font-family: 'Gotham-Medium', Arial, Helvetica, sans-serif;
+	}
