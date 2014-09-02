@@ -36,6 +36,23 @@
 			height: 126px;
 		}
 
+		.btn-connect{
+			left: 50%;
+			top: 60%;
+			margin: 0 0 0 -100px;
+			font-size: 12px;
+			width: 200px;
+			padding: 10px 0px;
+		}
+
+		.btn-connect:hover{
+			left: 50%;
+			margin: 0 0 0 -100px;
+			font-size: 12px;
+			width: 200px;
+			padding: 10px 0px;
+		}
+
 		#scroll{
 			position: absolute;
 			bottom: 30px;
