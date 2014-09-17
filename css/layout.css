@@ -152,7 +152,7 @@ section .header p{
 		top: 0;
 		left: 50%;
 		float: left;
-		margin: 20px 0 30px -149px;
+		margin: 20px 0 0 -149px;
 		width: 298px;
 		list-style: none;
 	}
@@ -588,7 +588,7 @@ section .header p{
 			top: 0;
 			left: 50%;
 			float: left;
-			margin: 0 0 30px -72px;
+			margin: 0 0 5px -72px;
 			width: 298px;
 			list-style: none;
 		}
